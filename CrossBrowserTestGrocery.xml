@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Cross Browser Test Suite" thread-count="5"
+	parallel="tests">
+	<test name="Cross Browser Test">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="executeClass.ExecuteLogin"></class>
+			<class name="executeClass.ExecuteAdminUser"></class>
+			<class name="executeClass.ExecuteManageExpense"></class>
+			<class name="executeClass.ExecuteManageOrders"></class>
+			<class name="executeClass.ExecuteManageProduct"></class>
+			<class name="executeClass.ExecutePushNotification"></class>
+			<class name="executeClass.ExecuteVerifyUser"></class>
+
+		</classes>
+	</test>
+
+	<test name="Firefox Browser Test">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="executeClass.ExecuteLogin"></class>
+			<class name="executeClass.ExecuteAdminUser"></class>
+			<class name="executeClass.ExecuteManageExpense"></class>
+			<class name="executeClass.ExecuteManageOrders"></class>
+			<class name="executeClass.ExecuteManageProduct"></class>
+			<class name="executeClass.ExecutePushNotification"></class>
+			<class name="executeClass.ExecuteVerifyUser"></class>
+		</classes>
+	</test>
+</suite>
+  
+
